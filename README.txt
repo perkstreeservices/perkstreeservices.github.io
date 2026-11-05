@@ -24,3 +24,12 @@ IMPORTANT
 
 IF THE LIVE WEBSITE STILL OPENS SMS
 Upload the included index.html and script.js to your GitHub repository root, overwriting the older files, then wait for the GitHub Pages deploy to finish. Hard-refresh (Ctrl+F5 on Windows).
+
+GOOGLE SEARCH OPTIMISATION
+- Optimised title, page description, local coverage copy, social sharing tags, canonical URL, and local-business structured data.
+- Added robots.txt and sitemap.xml. Upload both to the ROOT of your GitHub Pages repository.
+- These files assume your published URL is https://perkstreeservices.github.io/. If it differs, replace this address in index.html, sitemap.xml, and robots.txt before publishing.
+- Add your website as a URL-prefix property at https://search.google.com/search-console/ and submit sitemap.xml under Sitemaps.
+- Request indexing via URL Inspection and set up a Google Business Profile for service-area coverage.
+- Search ranking and indexing are not guaranteed.
+- Formspree endpoint remains https://formspree.io/f/xwllygkr and all form fields have been preserved.

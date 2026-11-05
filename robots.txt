@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perkstreeservices.github.io/sitemap.xml
