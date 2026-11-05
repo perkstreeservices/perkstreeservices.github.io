@@ -14,8 +14,8 @@ HOW TO PUBLISH FOR FREE
 You can alternatively use Cloudflare Pages or Netlify free static hosting.
 
 IMPORTANT
-- The free quote form opens an SMS composer on supported devices. It does NOT send messages by itself and does not store customer data.
-- On a desktop computer without SMS support, visitors can use the tap-to-call link or copy the phone number.
+- The free quote form submits enquiries to FormSubmit for delivery to perkstreeservices@gmail.com. It does NOT open SMS.
+- Visitors can also use the tap-to-call link if they prefer.
 - No custom domain is included; a .com.au domain typically costs money.
 - Services, business name, and phone number are taken from the provided business card details.
 - No service coverage area, ABN, email, licences, insurance, or customer reviews have been asserted; add verified information later if desired.
@@ -29,3 +29,6 @@ The quote form now sends submissions directly to perkstreeservices@gmail.com usi
 IMPORTANT ONE-TIME ACTIVATION: After publishing to GitHub Pages, submit the form once yourself with a test enquiry. FormSubmit will email an activation request to perkstreeservices@gmail.com. Open that inbox (including Spam/Junk if needed) and click the activation/confirmation link to enable delivery. Until activation is completed, enquiries are not delivered normally.
 
 The customer submits the form on the website; FormSubmit handles sending and may show a CAPTCHA or thank-you page. No email app is required for customers. Do not expect to test submissions from a local file:// preview: test the live hosted website. The form is hosted by third-party FormSubmit.co and submitted details are processed by that service. For information see https://formsubmit.co/documentation
+
+IF YOUR LIVE SITE STILL OPENS SMS
+Upload ALL updated files (especially index.html AND script.js) to the repository root, replacing existing versions. The script URL includes a version number so browsers fetch the new JavaScript instead of an older cached copy. Wait for the GitHub Pages deployment to finish, then hard refresh using Ctrl+F5 (Windows). Verify that your live index.html contains action="https://formsubmit.co/perkstreeservices@gmail.com" and your script.js does NOT contain sms:.
