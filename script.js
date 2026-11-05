@@ -14,17 +14,3 @@ if (menuButton && navigation) {
 }
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
-const form = document.querySelector('#quote-form');
-if (form) form.addEventListener('submit', event => {
-  event.preventDefault();
-  if (!form.reportValidity()) return;
-  const data = new FormData(form);
-  const message = [
-    'Hi Michael, I would like a free quote from PERKS Tree Services.',
-    'Name: ' + data.get('name').trim(),
-    'Location: ' + (data.get('suburb').trim() || 'Not provided'),
-    'Service: ' + data.get('service'),
-    'Job details: ' + data.get('message').trim()
-  ].join('\n');
-  window.location.href = 'sms:+61459925055?body=' + encodeURIComponent(message);
-});
