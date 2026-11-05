@@ -14,21 +14,13 @@ HOW TO PUBLISH FOR FREE
 You can alternatively use Cloudflare Pages or Netlify free static hosting.
 
 IMPORTANT
-- The free quote form submits enquiries to FormSubmit for delivery to perkstreeservices@gmail.com. It does NOT open SMS.
-- Visitors can also use the tap-to-call link if they prefer.
-- No custom domain is included; a .com.au domain typically costs money.
-- Services, business name, and phone number are taken from the provided business card details.
-- No service coverage area, ABN, email, licences, insurance, or customer reviews have been asserted; add verified information later if desired.
-- Google Fonts are loaded from Google's free CDN. If offline, the site falls back to standard fonts.
+- The free quote form sends submissions to your Formspree endpoint https://formspree.io/f/xwllygkr (NOT SMS).
+- Your Formspree account must have the form's notification email configured as perkstreeservices@gmail.com; verify this within your Formspree dashboard. The endpoint itself does not establish the notification recipient.
+- Your customers enter a required email address, along with their name and job details. This is included in the submission for replies.
+- The Formspree service processes the submitted personal information. Confirm your Formspree account is activated and able to receive form submissions.
+- Test from the published GitHub Pages website; submit a test enquiry and confirm it arrives at perkstreeservices@gmail.com before relying on the form.
+- No custom domain is included; .com.au domain typically costs money.
+- Google Fonts load from Google CDN.
 
-
-EMAIL QUOTE ENQUIRIES
----------------------
-The quote form now sends submissions directly to perkstreeservices@gmail.com using the free FormSubmit.co service, instead of SMS or mailto. Customer name, email, location, service and job details are included. The sender email is captured so you can reply directly to the enquiry.
-
-IMPORTANT ONE-TIME ACTIVATION: After publishing to GitHub Pages, submit the form once yourself with a test enquiry. FormSubmit will email an activation request to perkstreeservices@gmail.com. Open that inbox (including Spam/Junk if needed) and click the activation/confirmation link to enable delivery. Until activation is completed, enquiries are not delivered normally.
-
-The customer submits the form on the website; FormSubmit handles sending and may show a CAPTCHA or thank-you page. No email app is required for customers. Do not expect to test submissions from a local file:// preview: test the live hosted website. The form is hosted by third-party FormSubmit.co and submitted details are processed by that service. For information see https://formsubmit.co/documentation
-
-IF YOUR LIVE SITE STILL OPENS SMS
-Upload ALL updated files (especially index.html AND script.js) to the repository root, replacing existing versions. The script URL includes a version number so browsers fetch the new JavaScript instead of an older cached copy. Wait for the GitHub Pages deployment to finish, then hard refresh using Ctrl+F5 (Windows). Verify that your live index.html contains action="https://formsubmit.co/perkstreeservices@gmail.com" and your script.js does NOT contain sms:.
+IF THE LIVE WEBSITE STILL OPENS SMS
+Upload the included index.html and script.js to your GitHub repository root, overwriting the older files, then wait for the GitHub Pages deploy to finish. Hard-refresh (Ctrl+F5 on Windows).
